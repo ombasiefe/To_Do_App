@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_App</title>
+    <script src="To_Do_App.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="D0">
+    <h1>To Do List App</h1> 
+    <button onclick="Log_out();">Log-Out</button>
+    </div>
+    <div id="D1">
+        <form ><br>
+            <!-- <label for="">Task Name</label>-->
+            <input type="text" id="TaskName" placeholder="Task Name "> <!--<br><br>-->
+            <!--<label for="">Task Description</label>-->
+            <input type="text" id="TaskDescription" placeholder="Task Description"> <!--<br><br>-->
+            <!--Task Date Time -->
+            <input type="datetime-local" id="TaskDateTime" >
+            <input type="submit" value="Add" id="AddTaskBtn" onclick="addTask(); return false;">
+            <br>
+        </form><br>
+    </div>
+    <h2>My Tasks </h2>
+    <div id="D2">
+        <li id="Tasklist">
+        </li>
+    </div><br>
+    <button id="SaveToFileBtn" onclick="SaveTasksToFile();">Save To File</button>
+    <button id="DeleteTaskBtn" onclick="DeleteTasks();">Delete Tasks
+    </button>    
+</body>
+
+</html>
